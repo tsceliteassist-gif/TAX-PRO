@@ -1,34 +1,87 @@
 :root {
-  --wine: #a30712;
-  --wine2: #650009;
-  --gold: #d6a63c;
-  --gold2: #f4d77f;
+  --wine: #d20a17;
+  --wine2: #090909;
+  --gold: #e20d1b;
+  --gold2: #ffffff;
   --cream: #ffffff;
-  --ink: #241719;
-  --muted: #6f575a;
-  --line: #ead7d8;
+  --ink: #111111;
+  --muted: #625b5c;
+  --line: #e6d6d8;
+}
+
+.crest {
+  background: linear-gradient(145deg, #ef1725, #8f000a);
+  color: #ffffff;
+}
+
+.gold {
+  background: linear-gradient(135deg, #ef1725, #a5000c);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(165, 0, 12, .24);
+}
+
+.gold:hover {
+  background: #090909;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: rgba(210, 10, 23, .38);
+}
+
+.form-message {
+  background: #fff1f2;
+  border-left-color: var(--wine);
+}
+
+.auth-wrap {
+  background: linear-gradient(145deg, #ffffff, #f7dfe2);
+}
+
+.portal {
+  background: #f5f5f5;
+}
+
+.portal aside .brand b,
+footer .light b,
+.panel.accent > svg,
+.stat,
+.website-showcase-art span {
+  color: #ffffff;
+}
+
+.website-showcase-art > div {
+  background: rgba(9, 9, 9, .95);
+  border-left-color: var(--wine);
 }
 
 .hero,
 .page-hero,
 .cta {
-  background: linear-gradient(135deg, #ffffff 0%, #ffffff 62%, #f9edcf 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 62%, #fbeaec 100%);
 }
 
 .feature-band,
 .portal aside,
 .panel.accent,
 footer {
-  background: linear-gradient(145deg, #a30712, #5f0008);
+  background: linear-gradient(145deg, #111111, #050505);
+}
+
+.feature-band,
+.portal aside,
+.panel.accent {
+  background: linear-gradient(145deg, #c80815, #650009);
 }
 
 .website-service {
   margin: 20px max(7vw, 30px) 90px;
   display: grid;
   grid-template-columns: 1.05fr .95fr;
-  background: linear-gradient(135deg, #fff 0%, #fff 58%, #f7e8c3 100%);
+  background: linear-gradient(135deg, #fff 0%, #fff 58%, #fbe8ea 100%);
   border: 1px solid var(--line);
-  box-shadow: 0 24px 60px #6a070f18;
+  box-shadow: 0 24px 60px rgba(106, 7, 15, .14);
   overflow: hidden;
 }
 
@@ -75,7 +128,7 @@ footer {
 
 .website-path {
   border-top: 4px solid var(--gold) !important;
-  background: linear-gradient(145deg, #ffffff, #fff8e8) !important;
+  background: linear-gradient(145deg, #ffffff, #fff1f2) !important;
 }
 
 .website-showcase {
@@ -111,7 +164,7 @@ footer {
   gap: 14px;
   padding: 18px;
   border: 1px solid var(--line);
-  background: #fffaf1;
+  background: #fff4f5;
 }
 
 .website-benefits svg {
@@ -137,7 +190,7 @@ footer {
 .website-showcase-art {
   position: relative;
   min-height: 620px;
-  box-shadow: 0 30px 80px #65000924;
+  box-shadow: 0 30px 80px rgba(101, 0, 9, .18);
 }
 
 .website-showcase-art img {
@@ -177,7 +230,7 @@ footer {
 .website-process {
   padding: 90px max(7vw, 30px);
   text-align: center;
-  background: linear-gradient(135deg, #fffaf0, #f8e9c7);
+  background: linear-gradient(135deg, #ffffff, #f9e5e7);
 }
 
 .website-process > div {
