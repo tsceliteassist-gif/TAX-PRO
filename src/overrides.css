@@ -1,0 +1,87 @@
+:root {
+  --wine: #a30712;
+  --wine2: #650009;
+  --gold: #d6a63c;
+  --gold2: #f4d77f;
+  --cream: #ffffff;
+  --ink: #241719;
+  --muted: #6f575a;
+  --line: #ead7d8;
+}
+
+.hero,
+.page-hero,
+.cta {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 62%, #f9edcf 100%);
+}
+
+.feature-band,
+.portal aside,
+.panel.accent,
+footer {
+  background: linear-gradient(145deg, #a30712, #5f0008);
+}
+
+.website-service {
+  margin: 20px max(7vw, 30px) 90px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  background: linear-gradient(135deg, #fff 0%, #fff 58%, #f7e8c3 100%);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px #6a070f18;
+  overflow: hidden;
+}
+
+.website-service img {
+  width: 100%;
+  height: 100%;
+  min-height: 470px;
+  object-fit: cover;
+}
+
+.website-service > div {
+  padding: 55px;
+  align-self: center;
+}
+
+.website-service h2 {
+  font-size: clamp(34px, 4vw, 52px);
+  color: var(--wine2);
+}
+
+.website-service > div > p:not(.eyebrow) {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.website-service ul {
+  padding-left: 20px;
+  margin: 25px 0 32px;
+}
+
+.website-service li {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.website-service li::marker {
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .website-service {
+    grid-template-columns: 1fr;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .website-service img {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .website-service > div {
+    padding: 35px 24px;
+  }
+}
